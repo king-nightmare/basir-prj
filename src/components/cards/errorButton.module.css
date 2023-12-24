@@ -1,0 +1,27 @@
+.errorCard {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10rem;
+  left: 26rem;
+  width: 35%;
+  height: 35%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.cardImg {
+  width: 4rem;
+  height: 4rem;
+}
+.button {
+  border: 0 solid darkturquoise;
+  color: white;
+  background-color: darkturquoise;
+  margin-top: 1rem;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 10px;
+}
