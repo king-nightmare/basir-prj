@@ -1,0 +1,15 @@
+.adminNavigator {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  width: 10rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 1rem;
+}
+.navigatorAjustment {
+  display: flex;
+}

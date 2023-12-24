@@ -5,6 +5,7 @@ const ErrorButton = (props) => {
   const [notifed, setNotifed] = useState(props.error);
   const buttonHnadler = () => {
     setNotifed(false);
+    props.setError(true);
   };
   useEffect(() => {
     setNotifed(true);

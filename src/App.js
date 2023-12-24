@@ -1,5 +1,5 @@
 import "./App.css";
-import ManageRoutes from "./components/routes/manageRoutes";
+import ManageRoutes from "./routes/manageRoutes";
 function App() {
   return (
     <div>
