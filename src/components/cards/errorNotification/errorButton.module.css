@@ -9,8 +9,8 @@
   left: 26rem;
   width: 35%;
   height: 35%;
-  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+  background-color: whitesmoke;
 }
 .cardImg {
   width: 4rem;

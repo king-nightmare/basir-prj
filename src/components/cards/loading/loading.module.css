@@ -1,0 +1,15 @@
+.loading {
+  border: 1px solid black;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10rem;
+  left: 26rem;
+  width: 35%;
+  height: 35%;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}

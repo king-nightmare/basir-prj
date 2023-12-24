@@ -1,12 +1,14 @@
 import { Fragment, useEffect, useState } from "react";
-import ErrorButton from "../cards/errorButton";
+import ErrorButton from "../cards/errorNotification/errorButton";
+import Header from "./header";
+import Loading from "../cards/loading/loading";
 
 const MainPage = () => {
   const [data, setData] = useState("");
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch("https://your-api-url")
+    fetch("https://jsonplacehoder.typicode.com/users")
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((error) => new Error(setError(error)));
@@ -14,10 +16,11 @@ const MainPage = () => {
 
   return (
     <Fragment>
+      <Header />
       {data ? (
-        <p>loading...</p>
+        <Loading />
       ) : (
-        <ErrorButton message={error.message}></ErrorButton>
+        <ErrorButton message={error.message} error={true}></ErrorButton>
       )}
     </Fragment>
   );
